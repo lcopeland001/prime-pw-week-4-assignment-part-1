@@ -64,7 +64,7 @@ console.log( 'Not Positive', isPositive(-3) );
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
-let array=['pizza', 'sandwich', 'craker']
+let food=['pizza', 'sandwich', 'cracker', 'pasta'];
 
 function getLast( array ) {
   console.log('Get last item', array);
@@ -72,14 +72,27 @@ function getLast( array ) {
   return lastItem;
 }
 
-console.log('The last iten in the array is', getLast(array));
+console.log('The last iten in the array is', getLast(food));
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
+
+let names=['tim', 'greg', 'tina', 'bob']
+
 function find( value, array ){
-  
-}
+  console.log(value, 'is in the', array, 'array.');
+  for (item of array){
+    if (item === value){
+    return true;
+    } // if
+    else {
+    return false;
+    }
+  } // for
+} // fuction
+
+console.log(find('tina', names));
 
 // ----------------------
 // Stretch Goals
